@@ -1,0 +1,90 @@
+:root {
+    --backgrond: #000;
+    --text-color: #FFF;
+    --button: #8257E5;
+    --border: #29292E;
+    --border-menu-mobile: #A8A8B3;
+    --text-color-menu-mobile: #E1E1E6;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: url(assets/blur-2.png) right top no-repeat, 
+    url(assets/blur-1.png) left bottom no-repeat, 
+    rgb(0, 0, 0);
+    font-family: 'Manrope', sans-serif;
+}
+header{
+    display: grid;
+    grid-template-areas: "img ul buttom";
+    justify-content: center;
+    margin-top: 50px;
+}
+header img{
+    grid-area: img;
+    margin: 0 20px;
+
+}
+header ul{
+    grid-area: ul;
+    margin: 0 10px;
+}
+header ul li{
+    list-style-type: none;
+    color: #FFF;  
+    display: inline;
+    margin: 0 20px;
+}
+header a{
+    text-decoration: none;
+    padding: 5px;
+}
+header a:hover{
+    background-color: #8257E5;
+}
+header button {
+    grid-area: buttom;
+    background-color: #000;
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    border: #8257E5 1px solid;
+    margin: 0 20px;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+header button a{
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px;
+}
+header button a:hover{
+    background-color: #000;
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    border: #8257E5 1px solid;
+    text-transform: uppercase;
+    font-size: 10px;        
+}
+main{
+    display: block;
+    text-align: center;
+}
+main h1{
+    color: #FFF;
+    font-size: 100px;
+    font-weight: bold;
+}
+main h2{
+    color: rgb(0, 0, 0);
+    font-size: 80px;
+    font-weight: bold;
+    text-shadow:
+    #8257E5 1px -1px 2px, 
+    #8257E5 -1px 1px 2px, 
+    #8257E5 1px 1px 2px, 
+    #8257E5 -1px -1px 2px;
+}
